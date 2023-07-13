@@ -16,17 +16,17 @@ export const NavBar = () => {
         <Toolbar sx={{
           display: "flex", justifyContent: "space-between"
         }}>
+          <img height="30rem" src="logoWhite.svg" alt="Logo" />
           <IconButton
             size="large"
             edge="start"
             color="inherit"
             aria-label="menu"
-            sx={{ mr: 0 }}
+            sx={{ mr: '-10px' }}
 
           >
             <MenuIcon />
           </IconButton>
-          <img height="30rem" src="logoWhite.svg" alt="Logo" />
         </Toolbar>
       </AppBar>
     </Box>
