@@ -1,7 +1,6 @@
 import React from 'react'
 import '../styles/App.css'
 import { Hero } from './Hero'
-import { NavBar } from './AppBar'
 
 
 function App() {
@@ -9,9 +8,7 @@ function App() {
 
   return (
     <>
-      <NavBar></NavBar>
-      <Hero>
-      </Hero>
+      <Hero />
     </>
   )
 }
