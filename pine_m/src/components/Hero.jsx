@@ -21,12 +21,19 @@ export const Hero = () => {
     }))
 
     const CustomBox = styled(Box)(({ theme }) => ({
+        position: 'absolute',
         display: 'flex',
         flexDirection: 'column',
+        padding: '20px',
         gap: theme.spacing(5),
-        marginTop: theme.spacing(45),
         [theme.breakpoints.down("sm")]: {
-
+            bottom: '10%',
+        },
+        [theme.breakpoints.down("md")]: {
+            bottom: '15%',
+        },
+        [theme.breakpoints.up("lg")]: {
+            bottom: '10%',
         }
     }))
 
@@ -41,23 +48,28 @@ export const Hero = () => {
         },
     }))
 
-    const mainButton = styled(Button)(({ theme }) => ({
-        width: '100'
+    const MainButton = styled(Button)(({ theme }) => ({
+        p: 1.5,
+        backgroundColor: theme.palette.black.main,
+        width: 200, color: theme.palette.primary.main,
+        [theme.breakpoints.down("sm")]: {
+            width: '100%'
+        }
     }))
     return (
-        <HeroBox>
-            <Container sx={{ position: 'relative' }}>
-                <Navbar />
+        <HeroBox sx={{ position: 'relative' }}>
+            <Navbar />
+            <Container sx={{}}>
                 <CustomBox>
                     <Title component='h1'>First part of the Title <br />
                         <Box component='span' color="secondary.main">Another part In Color.</Box>
                     </Title>
-                    <Typography component='p' variant='h6' color='primary'>
+                    <Typography component='p' variant='h6' color='primary' fontWeight="200">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, maxime?
                     </Typography>
-                    <Button variant='contained' sx={{ p: 1.5, bgcolor: 'secondary.main' }} >
+                    <MainButton variant='contained'>
                         Contact
-                    </Button>
+                    </MainButton>
                 </CustomBox>
             </Container>
         </HeroBox>

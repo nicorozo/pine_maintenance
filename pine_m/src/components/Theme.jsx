@@ -13,7 +13,10 @@ export const theme = createTheme({
             default: '#191516',
         },
         gray: {
-            primary: '#565656'
+            main: '#565656'
+        },
+        black: {
+            main: '#191516'
         }
 
     }, typography: {
