@@ -13,6 +13,7 @@ export const Hero = () => {
         backgroundPosition: 'center',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
+        position: 'relative',
         height: '100vh',
         [theme.breakpoints.down('sm')]: {
             backgroundImage: 'linear-gradient(180deg, rgba(20, 20, 20, 0.68) 0%, rgba(56, 56, 56, 0.12) 41.79%, rgba(19, 19, 19, 0.80) 100%),url(https://media.istockphoto.com/id/488113800/pl/zdj%C4%99cie/zielony-square-przed-budynek-biurowy.jpg?s=2048x2048&w=is&k=20&c=tJH4TcQoRh1wsI0VhHICzQ9UbzK5fJdDdX08N36EmZw=)',
@@ -57,7 +58,7 @@ export const Hero = () => {
         }
     }))
     return (
-        <HeroBox sx={{ position: 'relative' }}>
+        <HeroBox >
             <Navbar />
             <Container sx={{}}>
                 <CustomBox>
