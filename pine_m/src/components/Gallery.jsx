@@ -48,7 +48,7 @@ export const Gallery = () => {
                             Know your company
                         </Typography>
                         <Typography variant="h4">
-                            Kacper Madeja
+                            John Doe
                         </Typography>
                         <ButtonGroup variant="text">
                             <ContactBttn>Wroclaw</ContactBttn>
